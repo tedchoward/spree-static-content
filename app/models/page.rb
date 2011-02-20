@@ -1,3 +1,5 @@
+require 'rdiscount'
+
 class Page < ActiveRecord::Base
   default_scope :order => "position ASC"
 
@@ -19,6 +21,10 @@ class Page < ActiveRecord::Base
 
   def link
     foreign_link.blank? ? slug_link : foreign_link
+  end
+
+  def body_html
+    RDiscount.new(body, :smart, :filter_html).to_html
   end
 
 private
