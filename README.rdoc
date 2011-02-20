@@ -1,3 +1,6 @@
+This is a clone of http://github.com/spree/spree-static-content that substitutes 
+using Markdown instead of a rich text editor.
+
 = Static Content
 
 Good, clean content management of pages for Spree.  You can use this to:
