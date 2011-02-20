@@ -19,10 +19,11 @@ Jeweler::Tasks.new do |s|
   s.summary = "Extention to manage the static pages for your Spree shop."
   s.description = s.summary
   #s.email = ""
-  s.homepage = "http://github.com/spree/spree-static-content"
-  s.authors = ["Peter Berkenbosch", "Roman Smirnov"]
+  s.homepage = "http://github.com/tedchoward/spree-static-content"
+  s.authors = ["Peter Berkenbosch", "Roman Smirnov", "Ted C. Howard"]
   s.add_dependency 'spree_core', ['>= 0.30.0']
   s.add_dependency 'spree_editor'
+  s.add_dependency 'rdiscount'
   #s.has_rdoc = false
   #s.extra_rdoc_files = [ "README.rdoc"]
   #s.rdoc_options = ["--main", "README.rdoc", "--inline-source", "--line-numbers"]
