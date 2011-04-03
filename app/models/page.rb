@@ -24,7 +24,7 @@ class Page < ActiveRecord::Base
   end
 
   def body_html
-    RDiscount.new(body, :smart, :filter_html).to_html
+    RDiscount.new(body, :smart).to_html
   end
 
 private
